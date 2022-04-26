@@ -1,0 +1,50 @@
+name: Tests
+
+on:
+  - push
+  - pull_request
+
+jobs:
+  tests:
+    name: ${{ matrix.session }} ${{ matrix.python }} / ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { python: "3.9", os: "ubuntu-latest"}
+
+    env:
+      FORCE_COLOR: "1"
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v2.4.0
+
+      - name: Set up Python ${{ matrix.python }}
+        uses: actions/setup-python@v2.3.0
+        with:
+          python-version: ${{ matrix.python }}
+
+      - name: Install requirements
+        run: |
+          pip install -r requirements.txt
+          pip --version
+
+      - name: Type check
+        run: |
+          invoke mypy
+
+      - name: Run tests
+        run: |
+          invoke test
+
+      - name: Build docs
+        run: |
+          invoke docs-build
+
+      - name: Upload documentation
+        uses: actions/upload-artifact@v2.2.4
+        with:
+          name: docs
+          path: docs/_build
