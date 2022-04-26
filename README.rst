@@ -1,15 +1,11 @@
 Hmp Experiment
 ==============
 
-|License|
 
 |Read the Docs| |Tests| |Codecov|
 
 |pre-commit| |Black|
 
-.. |License| image:: https://img.shields.io/pypi/l/hmp-experiment
-   :target: https://opensource.org/licenses/MIT
-   :alt: License
 .. |Read the Docs| image:: https://img.shields.io/readthedocs/hmp-experiment/latest.svg?label=Read%20the%20Docs
    :target: https://hmp-experiment.readthedocs.io/
    :alt: Read the documentation at https://hmp-experiment.readthedocs.io/
