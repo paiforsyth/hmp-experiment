@@ -47,6 +47,7 @@ Update lockfile
 .. code:: console
    poetry lock
 
+
 Add a dependency
 -------
 .. code:: console
