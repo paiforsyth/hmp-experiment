@@ -1,21 +1,12 @@
 Hmp Experiment
 ==============
 
-|PyPI| |Status| |Python Version| |License|
+|License|
 
 |Read the Docs| |Tests| |Codecov|
 
 |pre-commit| |Black|
 
-.. |PyPI| image:: https://img.shields.io/pypi/v/hmp-experiment.svg
-   :target: https://pypi.org/project/hmp-experiment/
-   :alt: PyPI
-.. |Status| image:: https://img.shields.io/pypi/status/hmp-experiment.svg
-   :target: https://pypi.org/project/hmp-experiment/
-   :alt: Status
-.. |Python Version| image:: https://img.shields.io/pypi/pyversions/hmp-experiment
-   :target: https://pypi.org/project/hmp-experiment
-   :alt: Python Version
 .. |License| image:: https://img.shields.io/pypi/l/hmp-experiment
    :target: https://opensource.org/licenses/MIT
    :alt: License
