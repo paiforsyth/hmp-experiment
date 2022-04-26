@@ -52,6 +52,7 @@ Add a dependency
 .. code:: console
    poetry add <dependency>
 
+
 Usage
 -----
 
