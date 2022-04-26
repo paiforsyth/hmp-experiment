@@ -35,15 +35,22 @@ Requirements
 * TODO
 
 
-Installation
+Environment Setup
 ------------
-
-You can install *Hmp Experiment* via pip_ from PyPI_:
-
 .. code:: console
+   conda env create -f env.yaml
+   conda activate ah
+   poetry install
 
-   $ pip install hmp-experiment
+Update lockfile
+------------
+.. code:: console
+   poetry lock
 
+Add a dependency
+-------
+.. code:: console
+   poetry add <dependency>
 
 Usage
 -----
