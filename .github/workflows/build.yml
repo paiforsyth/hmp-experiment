@@ -31,7 +31,7 @@ jobs:
           pip install -r requirements.txt
           pip --version
 
-      - name: Type check
+      - name: mypy
         run: |
           invoke mypy
 

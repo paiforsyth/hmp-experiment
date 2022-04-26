@@ -5,3 +5,4 @@ typing-extensions==4.2
 invoke==1.7.0
 mypy==0.910
 typeguard==2.13.3
+pytest==6.2.5
